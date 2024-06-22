@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Envio de Arquivo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="envio.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <header>Baixe o documento e preencha os dados</header>
+            <button class="btn">Clique aqui</button>
+        </div>
+        <div class="box">
+            <header>Envie o arquivo <span class="upload-icon">⬆️</span></header>
+            <button class="btn">Anexe aqui</button>
+        </div>
+    </div>
+    <form class="form-container" id="formEnvio">
+        <div class="form-group">
+            <label for="empresa">Empresa :</label>
+            <input type="text" id="empresa" name="empresa">
+        </div>
+        <div class="form-group">
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" id="cnpj" name="cnpj">
+        </div>
+        <div class="form-group">
+            <label for="ramo">Ramo:</label>
+            <input type="text" id="ramo" name="ramo" placeholder="Saúde, educação...">
+        </div>
+        <button type="submit" class="submit-btn">Enviar</button>
+    </form>
+    <script src="index.js" defer></script>
+</body>
+</html>
